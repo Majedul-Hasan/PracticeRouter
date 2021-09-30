@@ -1,6 +1,6 @@
 import React from "react";
 import "./Component.css";
-import { BrowserRouter as Router, Link, NavLink } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Nav = () => {
   const navStyle = {
@@ -10,7 +10,7 @@ const Nav = () => {
   return (
     <nav>
       <h3>Logo</h3>
-      <Router>
+
         <ul className="nav-links">
           <Link style={navStyle} to="/about">
             <li> about</li>
@@ -19,7 +19,7 @@ const Nav = () => {
             <li> shop</li>
           </Link>
         </ul>
-      </Router>
+   
     </nav>
   );
 };
